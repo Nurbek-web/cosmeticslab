@@ -1,0 +1,290 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\roman\\Cosmetics Lab\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Player\\PlayerController2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\PlayerController2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roman\\Cosmetics Lab\\Assets\\Code\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Code\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Core\\CameraFollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Core\\CameraFollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Interactables\\TableInteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Interactables\\TableInteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\UI\\BookUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UI\\BookUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\UI\\ReportUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UI\\ReportUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Interactables\\WardrobeInteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Interactables\\WardrobeInteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\UI\\AnnaDialogueUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UI\\AnnaDialogueUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\UI\\MinigameController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UI\\MinigameController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Game\\Inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Game\\Inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Game\\CosmeticSample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Game\\CosmeticSample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Game\\DayController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Game\\DayController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Interactables\\DoorController2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Interactables\\DoorController2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Core\\IInteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Core\\IInteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\UI\\InteractionPromptUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UI\\InteractionPromptUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Player\\PlayerInteraction2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\PlayerInteraction2D.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Code\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Code\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Code\\PlayerController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T16:26:07.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CameraFollow.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Core\\CameraFollow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\CameraFollow.cs",
+              "ToolTip": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Core\\CameraFollow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\CameraFollow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T15:16:41.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReportUI.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\UI\\ReportUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ReportUI.cs",
+              "ToolTip": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\UI\\ReportUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\ReportUI.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvyYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:24:07.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookUI.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\UI\\BookUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\BookUI.cs",
+              "ToolTip": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\UI\\BookUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\BookUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:22:02.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerController2D.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Player\\PlayerController2D.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController2D.cs",
+              "ToolTip": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Player\\PlayerController2D.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController2D.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAADwvx8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:59:32.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WardrobeInteractable.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Interactables\\WardrobeInteractable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interactables\\WardrobeInteractable.cs",
+              "ToolTip": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Interactables\\WardrobeInteractable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interactables\\WardrobeInteractable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T10:54:45.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AnnaDialogueUI.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\UI\\AnnaDialogueUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\AnnaDialogueUI.cs",
+              "ToolTip": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\UI\\AnnaDialogueUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\AnnaDialogueUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:21:00.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TableInteractable.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Interactables\\TableInteractable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interactables\\TableInteractable.cs",
+              "ToolTip": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Interactables\\TableInteractable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interactables\\TableInteractable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:02:47.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MinigameController.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\UI\\MinigameController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\MinigameController.cs",
+              "ToolTip": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\UI\\MinigameController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\MinigameController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:16:36.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Game\\Inventory.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\Inventory.cs",
+              "ToolTip": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Game\\Inventory.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\Inventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:03:53.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CosmeticSample.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Game\\CosmeticSample.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\CosmeticSample.cs",
+              "ToolTip": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Game\\CosmeticSample.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\CosmeticSample.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:03:21.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DayController.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Game\\DayController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\DayController.cs",
+              "ToolTip": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Game\\DayController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\DayController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAADwv2gAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:00:19.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DoorController2D.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Interactables\\DoorController2D.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interactables\\DoorController2D.cs",
+              "ToolTip": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Interactables\\DoorController2D.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interactables\\DoorController2D.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvxQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T10:44:51.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IInteractable.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Core\\IInteractable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\IInteractable.cs",
+              "ToolTip": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Core\\IInteractable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\IInteractable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:15:30.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "InteractionPromptUI.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\UI\\InteractionPromptUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\InteractionPromptUI.cs",
+              "ToolTip": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\UI\\InteractionPromptUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\InteractionPromptUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:07:54.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PlayerInteraction2D.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Player\\PlayerInteraction2D.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerInteraction2D.cs",
+              "ToolTip": "C:\\Users\\roman\\Cosmetics Lab\\Assets\\Scripts\\Player\\PlayerInteraction2D.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerInteraction2D.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvycAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:00:25.342Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

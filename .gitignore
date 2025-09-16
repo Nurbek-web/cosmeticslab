@@ -1,0 +1,77 @@
+# =============== #
+# Unity .gitignore
+# =============== #
+
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Cache
+[Bb]in/
+sysinfo.txt
+
+# Rider / VS / VSCode project files
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Visual Studio Code
+.vscode/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Crash Reports
+sysinfo.txt
+
+# Builds
+*.apk
+*.aab
+*.xcodeproj
+*.xcworkspace
+*.xcuserstate
+*.ipa
+*.app
+
+# Unity Cloud Build
+[Uu]serSettings/
+
+# Asset Store tools
+*.unitypackage
+
+# ========== #
+# JetBrains IDEs
+# ========== #
+.idea/
+*.sln.iml
+
+# ========== #
+# Gradle (Android builds)
+# ========== #
+.gradle/
+.gradle-cache/
+local.properties
+*.keystore
+*.jks
