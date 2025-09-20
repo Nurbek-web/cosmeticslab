@@ -75,3 +75,5 @@ sysinfo.txt
 local.properties
 *.keystore
 *.jks
+
+.vs/

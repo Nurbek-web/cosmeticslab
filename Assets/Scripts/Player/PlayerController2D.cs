@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerController2D : MonoBehaviour {
+public class PlayerController2D : MonoBehaviour
+{
     public float moveSpeed = 5f;
 
     private Rigidbody2D rb;
@@ -10,11 +11,13 @@ public class PlayerController2D : MonoBehaviour {
     // 👉 это свойство нужно для PlayerInteraction2D
     public Vector2 LastMoveDir { get; private set; } = Vector2.right;
 
-    void Awake() {
+    void Awake()
+    {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void Update() {
+    void Update()
+    {
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
@@ -25,7 +28,8 @@ public class PlayerController2D : MonoBehaviour {
             LastMoveDir = moveInput;
     }
 
-    void FixedUpdate() {
+    void FixedUpdate()
+    {
         rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
     }
 }
