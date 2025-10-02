@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Book
   - 
   - Interactable
   - 
@@ -44,11 +44,11 @@ TagManager:
   - name: Background
     uniqueID: 3866135753
     locked: 0
-  - name: World
-    uniqueID: 2753598715
-    locked: 0
   - name: Player
     uniqueID: 889431695
+    locked: 0
+  - name: foreground
+    uniqueID: 2753598715
     locked: 0
   - name: UI
     uniqueID: 3099711525
