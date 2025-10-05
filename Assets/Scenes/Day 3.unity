@@ -7871,7 +7871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneExitHandler
   exitPromptUI: {fileID: 1792573516}
-  menuSceneIndex: 1
+  menuSceneIndex: 4
 --- !u!61 &1539107800
 BoxCollider2D:
   m_ObjectHideFlags: 0

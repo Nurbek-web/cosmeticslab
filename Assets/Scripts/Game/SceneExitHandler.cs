@@ -1,68 +1,56 @@
-using UnityEngine;
-using UnityEngine.SceneManagement; // Обязательно для работы сценами!
+п»їusing UnityEngine;
+using UnityEngine.SceneManagement; // Р”Р»СЏ СЂР°Р±РѕС‚С‹ СЃРѕ СЃС†РµРЅР°РјРё
 
 public class SceneExitHandler : MonoBehaviour
 {
-    // Перетащите сюда из Инспектора
-    public GameObject exitPromptUI; // Ваш PNG "Exit"
+    // PNG СЃ РЅР°РґРїРёСЃСЊСЋ "Exit" (РїРѕРґСЃРєР°Р·РєР°)
+    public GameObject exitPromptUI;
 
-    // Индекс сцены, на которую нужно переключиться (например, 0 - сцена Меню)
+    // РРЅРґРµРєСЃ СЃС†РµРЅС‹, РєСѓРґР° РїРµСЂРµС…РѕРґРёС‚СЊ (РЅР°РїСЂРёРјРµСЂ, 0 = РіР»Р°РІРЅРѕРµ РјРµРЅСЋ)
     public int menuSceneIndex = 0;
 
-    private bool isInRange = false; // Флаг, находится ли персонаж в области двери
+    private bool isInRange = false; // РёРіСЂРѕРє Сѓ РґРІРµСЂРё?
 
     void Start()
     {
-        // Убедимся, что подсказка невидима в начале
         if (exitPromptUI != null)
-        {
-            exitPromptUI.SetActive(false);
-        }
+            exitPromptUI.SetActive(false); // СЃРєСЂС‹С‚СЊ РїРѕРґСЃРєР°Р·РєСѓ РІ РЅР°С‡Р°Р»Рµ
     }
 
     void Update()
     {
-        // Проверяем, находится ли персонаж в области и нажата ли клавиша 'E'
+        // РџСЂРѕРІРµСЂСЏРµРј РЅР°Р¶Р°С‚РёРµ РєР»Р°РІРёС€Рё Р•, РµСЃР»Рё РёРіСЂРѕРє РІ Р·РѕРЅРµ РґРІРµСЂРё
         if (isInRange && Input.GetKeyDown(KeyCode.E))
         {
-            // Вызываем функцию смены сцены
             LoadMenuScene();
         }
     }
 
-    // Эта функция вызывается, когда другой коллайдер входит в Триггер
+    // РљРѕРіРґР° РёРіСЂРѕРє РІС…РѕРґРёС‚ РІ С‚СЂРёРіРіРµСЂ РґРІРµСЂРё
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Проверяем, что вошел именно персонаж по тегу "Player"
         if (other.CompareTag("Player"))
         {
             isInRange = true;
-            // Показываем PNG "Exit"
             if (exitPromptUI != null)
-            {
-                exitPromptUI.SetActive(true);
-            }
+                exitPromptUI.SetActive(true); // РїРѕРєР°Р·Р°С‚СЊ PNG Exit
         }
     }
 
-    // Эта функция вызывается, когда другой коллайдер выходит из Триггера
+    // РљРѕРіРґР° РёРіСЂРѕРє РІС‹С…РѕРґРёС‚ РёР· С‚СЂРёРіРіРµСЂР° РґРІРµСЂРё
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             isInRange = false;
-            // Скрываем PNG "Exit"
             if (exitPromptUI != null)
-            {
-                exitPromptUI.SetActive(false);
-            }
+                exitPromptUI.SetActive(false); // СЃРєСЂС‹С‚СЊ PNG Exit
         }
     }
 
-    // Функция для загрузки сцены
+    // Р—Р°РіСЂСѓР·РєР° СЃС†РµРЅС‹ РїРѕ РёРЅРґРµРєСЃСѓ
     private void LoadMenuScene()
     {
-        // SceneManager.LoadScene загружает сцену по индексу
         SceneManager.LoadScene(menuSceneIndex);
     }
 }
