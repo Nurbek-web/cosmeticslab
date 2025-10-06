@@ -9,31 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 879645c594323ec4a9d5da2790ed8c65
   - enabled: 1
-    path: Assets/Scenes/Lobby1.unity
-    guid: f0b4d994190cf894185c0d1452176dad
+    path: Assets/Scenes/Lobby.unity
+    guid: 4556d4849d4236c4392f368cf302b6e8
   - enabled: 1
-    path: Assets/Scenes/Lobby2.unity
-    guid: 41cb71bef6b16d846bf7a0d26628a85f
-  - enabled: 1
-    path: Assets/Scenes/Lobby3.unity
-    guid: eab9b4dd6757b5543b62e73574ba7736
-  - enabled: 1
-    path: Assets/Scenes/Lobby4.unity
-    guid: 7d0618fa389845a49b753bbce091b6d5
-  - enabled: 1
-    path: Assets/Scenes/Lobby5.unity
-    guid: 1b015135d4211234187d829ab23a1c08
-  - enabled: 1
-    path: Assets/Scenes/Lobby6.unity
-    guid: b8f6892b871932f42a9bd7c0ec621877
-  - enabled: 1
-    path: Assets/Scenes/Lobby7.unity
-    guid: adcf11d36235f8742bc6bd80e37ed3f3
-  - enabled: 1
-    path: Assets/Scenes/Day1.unity
+    path: Assets/Scenes/Day 1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Day2.unity
+    path: Assets/Scenes/Day 2.unity
     guid: c494846d540d7ff4893e78f017ce4282
   - enabled: 1
     path: Assets/Scenes/Day 3.unity

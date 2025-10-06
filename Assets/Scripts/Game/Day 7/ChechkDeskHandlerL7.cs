@@ -2,37 +2,89 @@ using UnityEngine;
 
 public class CheckDeskHandlerL7 : MonoBehaviour
 {
-    public GameObject ePromptUI;
-    public GameObject checkPanel;
+    // ... (публичные поля без изменений)
+    public GameObject checkPromptUI;
+    public GameObject checkPanelUI;
     public GameObject successImage;
-    public GameObject failImage;
+    public GameObject failureImage;
 
-    bool inRange = false;
+    // !!! ВАЖНО: Установите номер текущего дня (1 для Day1, 2 для Day2 и т.д.)
+    public int currentLevel = 7;
+
+    private bool isInRange = false;
 
     void Start()
     {
-        ePromptUI.SetActive(false);
-        checkPanel.SetActive(false);
+        if (checkPanelUI != null) checkPanelUI.SetActive(false);
+        if (checkPromptUI != null) checkPromptUI.SetActive(false);
     }
 
     void Update()
     {
-        if (inRange && Input.GetKeyDown(KeyCode.E))
+        if (isInRange && Input.GetKeyDown(KeyCode.E))
         {
-            bool correct = ProductManagerL7.Instance.CheckAllDecisions();
-            checkPanel.SetActive(!checkPanel.activeSelf);
-            ePromptUI.SetActive(!checkPanel.activeSelf);
-            successImage.SetActive(correct);
-            failImage.SetActive(!correct);
+            if (checkPanelUI == null || ProductManagerL7.Instance == null)
+            {
+                Debug.LogError("Ошибка: Не установлены UI-панель проверки или ProductManager.");
+                return;
+            }
+
+            if (checkPanelUI.activeSelf)
+            {
+                // Закрытие
+                checkPanelUI.SetActive(false);
+                if (checkPromptUI != null) checkPromptUI.SetActive(true);
+            }
+            else
+            {
+                // Открытие и Проверка
+                if (checkPromptUI != null) checkPromptUI.SetActive(false);
+
+                // Вызываем проверку
+                bool allCorrect = ProductManagerL7.Instance.CheckAllDecisions();
+
+                checkPanelUI.SetActive(true);
+
+                if (successImage != null && failureImage != null)
+                {
+                    successImage.SetActive(allCorrect);
+                    failureImage.SetActive(!allCorrect);
+                }
+
+                // =======================================================
+                // !!! НОВАЯ ЛОГИКА: СОХРАНЕНИЕ ПРОГРЕССА ПРИ УСПЕХЕ !!!
+                // =======================================================
+                if (allCorrect)
+                {
+                    // Вызываем статический метод для сохранения прогресса. 
+                    // Это открывает следующий день (currentLevel + 1)
+                    ProgressManager.CompleteDay(currentLevel);
+                }
+                // =======================================================
+            }
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    // ... (методы OnTriggerEnter2D и OnTriggerExit2D без изменений)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) { inRange = true; ePromptUI.SetActive(true); }
+        if (other.CompareTag("Player"))
+        {
+            isInRange = true;
+            if (checkPromptUI != null) checkPromptUI.SetActive(true);
+        }
     }
-    void OnTriggerExit2D(Collider2D other)
+
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) { inRange = false; ePromptUI.SetActive(false); checkPanel.SetActive(false); }
+        if (other.CompareTag("Player"))
+        {
+            isInRange = false;
+            if (checkPromptUI != null) checkPromptUI.SetActive(false);
+            if (checkPanelUI != null && checkPanelUI.activeSelf)
+            {
+                checkPanelUI.SetActive(false);
+            }
+        }
     }
 }

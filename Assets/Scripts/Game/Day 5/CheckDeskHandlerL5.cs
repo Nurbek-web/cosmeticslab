@@ -2,70 +2,76 @@ using UnityEngine;
 
 public class CheckDeskHandlerL5 : MonoBehaviour
 {
+    // ... (публичные поля без изменений)
     public GameObject checkPromptUI;
     public GameObject checkPanelUI;
     public GameObject successImage;
     public GameObject failureImage;
 
+    // !!! ВАЖНО: Установите номер текущего дня (1 для Day1, 2 для Day2 и т.д.)
+    public int currentLevel = 5;
+
     private bool isInRange = false;
 
     void Start()
     {
-        if (checkPromptUI != null) checkPromptUI.SetActive(false);
         if (checkPanelUI != null) checkPanelUI.SetActive(false);
-        if (successImage != null) successImage.SetActive(false);
-        if (failureImage != null) failureImage.SetActive(false);
+        if (checkPromptUI != null) checkPromptUI.SetActive(false);
     }
 
     void Update()
     {
         if (isInRange && Input.GetKeyDown(KeyCode.E))
         {
+            if (checkPanelUI == null || ProductManagerL5.Instance == null)
+            {
+                Debug.LogError("Ошибка: Не установлены UI-панель проверки или ProductManager.");
+                return;
+            }
+
             if (checkPanelUI.activeSelf)
             {
-                // Закрытие панели
+                // Закрытие
                 checkPanelUI.SetActive(false);
-                checkPromptUI.SetActive(true);
+                if (checkPromptUI != null) checkPromptUI.SetActive(true);
             }
             else
             {
-                // Проверка, что ВСЕ 4 решения приняты
-                // ВНИМАНИЕ: ЭТО ВЫЗЫВАЕТ ОШИБКУ УРОВНЯ ДОСТУПА! 
-                // Вам нужно изменить ProductManagerL5.productsDecided на public.
-                if (ProductManagerL5.Instance == null || ProductManagerL5.Instance.productsDecided < 4)
-                {
-                    Debug.Log("L5: Not all product decisions have been recorded yet.");
-                    return; // Не открываем, если решения не приняты
-                }
-
                 // Открытие и Проверка
-                checkPanelUI.SetActive(true);
-                checkPromptUI.SetActive(false);
+                if (checkPromptUI != null) checkPromptUI.SetActive(false);
 
+                // Вызываем проверку
                 bool allCorrect = ProductManagerL5.Instance.CheckAllDecisions();
 
-                // Отображение результата
-                successImage.SetActive(allCorrect);
-                failureImage.SetActive(!allCorrect);
+                checkPanelUI.SetActive(true);
+
+                if (successImage != null && failureImage != null)
+                {
+                    successImage.SetActive(allCorrect);
+                    failureImage.SetActive(!allCorrect);
+                }
+
+                // =======================================================
+                // !!! НОВАЯ ЛОГИКА: СОХРАНЕНИЕ ПРОГРЕССА ПРИ УСПЕХЕ !!!
+                // =======================================================
+                if (allCorrect)
+                {
+                    // Вызываем статический метод для сохранения прогресса. 
+                    // Это открывает следующий день (currentLevel + 1)
+                    ProgressManager.CompleteDay(currentLevel);
+                }
+                // =======================================================
             }
         }
     }
 
+    // ... (методы OnTriggerEnter2D и OnTriggerExit2D без изменений)
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             isInRange = true;
-            // Показываем E Prompt, только если все решения приняты
-            // ВНИМАНИЕ: ЭТО ВЫЗЫВАЕТ ОШИБКУ УРОВНЯ ДОСТУПА! 
-            // Вам нужно изменить ProductManagerL5.productsDecided на public.
-            if (ProductManagerL5.Instance != null && ProductManagerL5.Instance.productsDecided >= 4)
-            {
-                if (checkPromptUI != null && !checkPanelUI.activeSelf)
-                {
-                    checkPromptUI.SetActive(true);
-                }
-            }
+            if (checkPromptUI != null) checkPromptUI.SetActive(true);
         }
     }
 
@@ -75,11 +81,10 @@ public class CheckDeskHandlerL5 : MonoBehaviour
         {
             isInRange = false;
             if (checkPromptUI != null) checkPromptUI.SetActive(false);
-            if (checkPanelUI != null) checkPanelUI.SetActive(false);
-
-            // Скрываем результат при выходе
-            if (successImage != null) successImage.SetActive(false);
-            if (failureImage != null) failureImage.SetActive(false);
+            if (checkPanelUI != null && checkPanelUI.activeSelf)
+            {
+                checkPanelUI.SetActive(false);
+            }
         }
     }
 }

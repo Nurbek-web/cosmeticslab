@@ -19,9 +19,9 @@ public class DropSlotL3 : MonoBehaviour, IDropHandler
             droppedItem.transform.localPosition = Vector3.zero;
 
             // 2. ГЛАВНОЕ: Сообщаем InventoryManagerL4, какой продукт был выбран
-            if (InventoryManagerL4.Instance != null)
+            if (InventoryManagerL3.Instance != null)
             {
-                InventoryManagerL4.Instance.selectedProductForAnalysis = droppedItem.productName;
+                InventoryManagerL3.Instance.selectedProductForAnalysis = droppedItem.productName;
             }
 
             // 3. Обновляем текст анализатора (через прикрепленный handler)

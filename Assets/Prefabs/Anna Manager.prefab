@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7735604228002319253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4896039833711476203}
+  - component: {fileID: 7958632599247247958}
+  m_Layer: 0
+  m_Name: Anna Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4896039833711476203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7735604228002319253}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.29308, y: -0.26811, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7958632599247247958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7735604228002319253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bb079d3ae82c8849905a6316a4dadf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  mainPanel: {fileID: 0}
+  mainTextComponent: {fileID: 0}
+  nextButton: {fileID: 0}
+  previousButton: {fileID: 0}
+  sidePanel: {fileID: 0}
+  steps:
+  - mainText: "Hi there! Welcome to the Cosmetic Certification Lab.\nI\u2019m Anna,
+      your mentor. Today, you\u2019ll begin your work as a cosmetic tester."
+    isSidePanelActive: 0
+  - mainText: "Your task is to check the ingredients of cosmetic samples and decide
+      whether to Approve or Reject them.\nFor today, it\u2019s simple \u2014 focus
+      only on the ingredient list and whether it has a certificate."
+    isSidePanelActive: 0
+  - mainText: "Each product comes with a certificate. But don\u2019t trust certificates
+      blindly \u2014\nsome may be incomplete or contain hidden issues."
+    isSidePanelActive: 0
+  - mainText: "Use your Reference Book (B) to check which ingredients are banned.\nIf
+      you find a banned substance in the formula \u2014 Reject the sample."
+    isSidePanelActive: 0
+  - mainText: 'Go to the computer and press E to start reviewing the samples.
+
+      Read
+      each ingredient list carefully and choose Approve or Rejec'
+    isSidePanelActive: 0
+  - mainText: "Once you\u2019ve reviewed all the samples, walk to the round table
+      and press E to check if your decisions were correct."
+    isSidePanelActive: 0
+  - mainText: "If everything is correct \u2014 great job!\nNow you can leave the
+      room and move to the next day.\nGo to the exit door and press E to continue."
+    isSidePanelActive: 0
+  - mainText: "Ready? Let\u2019s begin.\nRemember: your Reference Book is your best
+      friend!"
+    isSidePanelActive: 0
+  typingSpeed: 0.03

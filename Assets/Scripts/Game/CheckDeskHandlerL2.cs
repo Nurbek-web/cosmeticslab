@@ -2,10 +2,14 @@ using UnityEngine;
 
 public class CheckDeskHandlerL2 : MonoBehaviour
 {
+    // ... (публичные поля без изменений)
     public GameObject checkPromptUI;
     public GameObject checkPanelUI;
     public GameObject successImage;
     public GameObject failureImage;
+
+    // !!! ВАЖНО: Установите номер текущего дня (1 для Day1, 2 для Day2 и т.д.)
+    public int currentLevel = 2;
 
     private bool isInRange = false;
 
@@ -21,7 +25,7 @@ public class CheckDeskHandlerL2 : MonoBehaviour
         {
             if (checkPanelUI == null || ProductManagerL2.Instance == null)
             {
-                Debug.LogError("Ошибка: Не установлены UI-панель проверки или ProductManagerL2.");
+                Debug.LogError("Ошибка: Не установлены UI-панель проверки или ProductManager.");
                 return;
             }
 
@@ -36,7 +40,7 @@ public class CheckDeskHandlerL2 : MonoBehaviour
                 // Открытие и Проверка
                 if (checkPromptUI != null) checkPromptUI.SetActive(false);
 
-                // Вызываем проверку для L2
+                // Вызываем проверку
                 bool allCorrect = ProductManagerL2.Instance.CheckAllDecisions();
 
                 checkPanelUI.SetActive(true);
@@ -46,10 +50,22 @@ public class CheckDeskHandlerL2 : MonoBehaviour
                     successImage.SetActive(allCorrect);
                     failureImage.SetActive(!allCorrect);
                 }
+
+                // =======================================================
+                // !!! НОВАЯ ЛОГИКА: СОХРАНЕНИЕ ПРОГРЕССА ПРИ УСПЕХЕ !!!
+                // =======================================================
+                if (allCorrect)
+                {
+                    // Вызываем статический метод для сохранения прогресса. 
+                    // Это открывает следующий день (currentLevel + 1)
+                    ProgressManager.CompleteDay(currentLevel);
+                }
+                // =======================================================
             }
         }
     }
 
+    // ... (методы OnTriggerEnter2D и OnTriggerExit2D без изменений)
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

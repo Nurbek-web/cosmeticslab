@@ -6,8 +6,9 @@ public class SceneExitHandler : MonoBehaviour
     // PNG с надписью "Exit" (подсказка)
     public GameObject exitPromptUI;
 
-    // Индекс сцены, куда переходить (например, 0 = главное меню)
-    public int menuSceneIndex = 0;
+    // !!! ИЗМЕНЕНИЕ: Название сцены, куда переходить (должно быть "Lobby")
+    [Tooltip("Название сцены, куда возвращаться после выхода из уровня (должно быть 'Lobby')")]
+    public string targetSceneName = "Lobby"; // Устанавливаем по умолчанию "Lobby"
 
     private bool isInRange = false; // игрок у двери?
 
@@ -22,7 +23,7 @@ public class SceneExitHandler : MonoBehaviour
         // Проверяем нажатие клавиши Е, если игрок в зоне двери
         if (isInRange && Input.GetKeyDown(KeyCode.E))
         {
-            LoadMenuScene();
+            LoadTargetScene();
         }
     }
 
@@ -45,12 +46,16 @@ public class SceneExitHandler : MonoBehaviour
             isInRange = false;
             if (exitPromptUI != null)
                 exitPromptUI.SetActive(false); // скрыть PNG Exit
+            if (isInRange == false && Input.GetKeyDown(KeyCode.E)) // Добавлено, чтобы закрыть подсказку, если игрок пытается выйти, но уже ушел
+            {
+                // Необязательно, но может быть полезно для сброса состояния
+            }
         }
     }
 
-    // Загрузка сцены по индексу
-    private void LoadMenuScene()
+    // Загрузка целевой сцены (Лобби)
+    private void LoadTargetScene()
     {
-        SceneManager.LoadScene(menuSceneIndex);
+        SceneManager.LoadScene(targetSceneName);
     }
 }
